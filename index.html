@@ -82,36 +82,9 @@
     </div>
   </section>
 </div>
-<button id="theme-toggle" class="theme-btn">
-  <i class="fas fa-sun"></i>
-</button>
-<script>
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-const icon = themeToggle.querySelector('i');
-
-themeToggle.addEventListener('click', () => {
-  // Ajout de l'animation
-  icon.classList.add('rotate-icon');
-  setTimeout(() => icon.classList.remove('rotate-icon'), 500); // supprime après animation
-
-  // Changement du mode
-  body.classList.toggle('light-mode');
-
-  // Changement de l'icône
-  if (body.classList.contains('light-mode')) {
-    icon.classList.remove('fa-sun');
-    icon.classList.add('fa-moon');
-  } else {
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
-  }
-});
-</script>
-
 </body>
-
 </html>
+
 
 
 
