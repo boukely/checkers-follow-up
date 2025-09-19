@@ -141,15 +141,18 @@ body {
   color: #ccc;
 }
 
-/* Liste cachée */
 .project-details {
-  display: none;
+  max-height: 0;       /* caché par défaut */
+  overflow: hidden;    /* cacher le contenu qui dépasse */
   margin-top: 10px;
   padding-left: 20px;
   color: #ccc;
   font-size: 14px;
+  transition: max-height 0.3s ease;
 }
 
 .project-card.active .project-details {
-  display: block;
+  max-height: 500px; /* assez grand pour contenir toute la liste */
 }
+
+
