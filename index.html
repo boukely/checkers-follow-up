@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Squid Game</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pzw5eZ3H6pMgwqKv1bSxJ2Yt2a1uWg6+FzDoyQHmZf3b8f9fZxJ6X5CqxgQ2F4aE3C3CnO+7jlrxpLefV3LIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+  <section class="hero">
+    <div class="hero-left">
+      <h1>CHECKERS SPRING SUMMER 2026</h1>
+      <p>This website is designed to centralize and manage all order details for personal use only. It is not intended for clients or public access. You can contact the developer to submit comments or suggestions for improvement by clicking the button below.</p>
+      <div class="cta">
+        <button class="btn btn-primary">Send message</button>
+        <button class="btn btn-secondary" #projects>Details</button>
+      </div>
+    </div>
+<div class="hero-right">
+  <div class="card">
+    <img src="assets/mahery.png" alt="Photo de Mahery Andrianandraina">
+    <h3>Mahery Andrianandraina</h3>
+    <p>Développeur Web & Backend</p>
+    <div class="icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+    <!-- Bouton mode clair/nuit -->
+  </div>
+</div>
+
+  </section>
+
+  <section class="projects">
+    <h2>DETAILS</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://picsum.photos/300/200" alt="Projet 1">
+        <h4>BRIEF SHEETS</h4>
+        <p>This contains all brief sheets for CHECKERS : Mens , Ladies , Boys , Girls .</p>
+               <ul class="project-details">
+               <li>Mens: 50 items</li>
+               <li>Ladies: 40 items</li>
+               <li>Boys: 30 items</li>
+               <li>Girls: 35 items</li>
+               </ul>
+      </div>
+      <div class="project-card">
+        <img src="https://picsum.photos/300/200?2" alt="Projet 2">
+        <h4>CUSTOMER's PO</h4>
+        <p>This contains BAMBO ROSE's PO.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://picsum.photos/300/200?3" alt="Projet 3">
+        <h4>SIZE SPECIFICATIONS</h4>
+        <p>Description rapide du projet 3, technologie utilisée, résultat.</p>
+      </div>
+       <div class="project-card">
+        <img src="https://picsum.photos/300/200?4" alt="Projet 3">
+        <h4>TOOLS FOR ORDERING</h4>
+        <p>Description rapide du projet 3, technologie utilisée, résultat.</p>
+      </div>
+       <div class="project-card">
+        <img src="https://picsum.photos/300/200?5" alt="Projet 3">
+        <h4>APROVED ARTWORK</h4>
+        <p>Description rapide du projet 3, technologie utilisée, résultat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+</div>
+<button id="theme-toggle" class="theme-btn">
+  <i class="fas fa-sun"></i>
+</button>
+<script>
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const icon = themeToggle.querySelector('i');
+
+themeToggle.addEventListener('click', () => {
+  // Ajout de l'animation
+  icon.classList.add('rotate-icon');
+  setTimeout(() => icon.classList.remove('rotate-icon'), 500); // supprime après animation
+
+  // Changement du mode
+  body.classList.toggle('light-mode');
+
+  // Changement de l'icône
+  if (body.classList.contains('light-mode')) {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  } else {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  }
+});
+</script>
+
+</body>
+</html>
