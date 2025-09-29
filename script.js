@@ -7,7 +7,7 @@ projectCards.forEach(card => {
     card.classList.toggle('active');
   });
 });
-function confirmDownload() {
+function confirmSample() {
     let result = confirm("Do you want to download it?");
     if (result) {
       // Redirection vers le fichier si OUI
@@ -15,4 +15,5 @@ function confirmDownload() {
     }
     // Si NON, rien ne se passe
   }
+
 
