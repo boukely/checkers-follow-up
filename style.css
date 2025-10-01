@@ -118,6 +118,7 @@ body {
   transition: 0.3s;
   cursor: pointer;
   border: 2px solid transparent;
+justify-content: center; /* centre les cards si pas assez pour remplir */
 }
 
 .project-card:hover {
@@ -154,5 +155,6 @@ body {
 .project-card.active .project-details {
   max-height: 500px; /* assez grand pour contenir toute la liste */
 }
+
 
 
