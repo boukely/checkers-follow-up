@@ -64,7 +64,8 @@
   max-height: 0;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  padding-left: 20px; /* espace pour bien afficher les puces */
+  list-style: disc;   /* affiche des points */
   transition: max-height 0.4s ease;
 }
 
@@ -191,6 +192,7 @@ justify-content: center; /* centre les cards si pas assez pour remplir */
 .project-card.active .project-details {
   max-height: 500px; /* assez grand pour contenir toute la liste */
 }
+
 
 
 
