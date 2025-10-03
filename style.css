@@ -60,7 +60,18 @@
   height:80%; 
   object-fit: cover; /* garde le ratio, rempli sans déformer */ 
 }
+.project-card ul {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.4s ease;
+}
 
+.project-card.active ul {
+  max-height: 200px; /* assez pour montrer tout le contenu */
+  margin-top: 10px;
+}
 .project-card h4 { margin-bottom:6px; color:var(--primary); }
 .project-card p { font-size:14px; color:#ccc; }
 
@@ -180,6 +191,7 @@ justify-content: center; /* centre les cards si pas assez pour remplir */
 .project-card.active .project-details {
   max-height: 500px; /* assez grand pour contenir toute la liste */
 }
+
 
 
 
