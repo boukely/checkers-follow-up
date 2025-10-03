@@ -143,8 +143,21 @@
     </div>
   </section>
 </div>
+  <script>
+const cards = document.querySelectorAll(".project-card");
+
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    // Fermer toutes les autres
+    cards.forEach(c => c.classList.remove("active"));
+    // Ouvrir celle qu’on a cliquée
+    card.classList.add("active");
+  });
+});
+</script>
 </body>
 </html>
+
 
 
 
